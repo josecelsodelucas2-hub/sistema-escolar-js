@@ -5,8 +5,7 @@ Permite cadastrar alunos, adicionar/remover notas, calcular média automaticamen
 
 ## 🚀 Demo (GitHub Pages)
 Depois de ativar o GitHub Pages neste repositório, seu projeto ficará disponível em:
-```
-https://SEU_USUARIO.github.io/sistema-escolar-js/
+```https://josecelsodelucas2-hub.github.io/sistema-escolar-js/
 ```
 > Substitua `SEU_USUARIO` pelo seu nome de usuário do GitHub.
 
