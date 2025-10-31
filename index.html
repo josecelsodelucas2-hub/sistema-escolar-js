@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gestão de Notas — Vários Alunos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1>Gestão de Notas — Vários Alunos</h1>
+  </header>
+
+  <main class="container">
+    <!-- Cadastro de aluno -->
+    <section class="card">
+      <h2>Cadastro de Aluno</h2>
+      <div class="form-row">
+        <label for="nomeAluno">Nome do aluno</label>
+        <input type="text" id="nomeAluno" placeholder="Ex.: Ana Silva"/>
+        <button id="btnAddAluno">Adicionar Aluno</button>
+      </div>
+    </section>
+
+    <!-- Cadastro de notas -->
+    <section class="card">
+      <h2>Cadastro de Notas</h2>
+      <div class="form-grid">
+        <div>
+          <label for="alunoSelect">Selecione o aluno</label>
+          <select id="alunoSelect"></select>
+        </div>
+        <div>
+          <label for="notaInput">Nota (0 a 10)</label>
+          <input type="number" id="notaInput" placeholder="Ex.: 8.5" min="0" max="10" step="0.01"/>
+        </div>
+        <div class="actions">
+          <button id="btnAddNota">Adicionar Nota</button>
+          <button id="btnGerarRelatorio" class="secondary">Gerar Relatório</button>
+          <button id="btnExportarCSV" class="secondary">Exportar CSV</button>
+          <button id="btnLimparTudo" class="danger">Limpar Tudo</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tabela de alunos -->
+    <section class="card">
+      <h2>Tabela de Alunos</h2>
+      <div class="table-wrap">
+        <table id="alunosTable">
+          <thead>
+            <tr>
+              <th>Aluno</th>
+              <th>Notas</th>
+              <th>Média</th>
+              <th>Situação</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- linhas geradas via JS -->
+          </tbody>
+        </table>
+      </div>
+      <p class="hint">Dica: clique no “x” em cada nota para removê-la.</p>
+    </section>
+
+    <!-- Relatório -->
+    <section class="card">
+      <h2>Relatório</h2>
+      <div id="relatorio" class="relatorio">
+        <p>Sem dados ainda. Clique em <strong>Gerar Relatório</strong>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <small>Exemplo educacional — HTML, CSS e JavaScript (condições, laços e funções)</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
